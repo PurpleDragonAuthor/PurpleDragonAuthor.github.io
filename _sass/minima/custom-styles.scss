@@ -1,0 +1,55 @@
+.carousel {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carousel img {
+  width: 100%;
+  display: block;
+}
+
+.dots {
+  margin-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+.book-entry {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.book-cover {
+  width: 150px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+
+.book-details {
+  flex: 1;
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}

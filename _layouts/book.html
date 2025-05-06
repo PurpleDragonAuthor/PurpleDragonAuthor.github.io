@@ -1,0 +1,22 @@
+---
+layout: base
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }} ({{ page.year }})</h1>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <div class="book-entry">
+      <img class="book-cover" src="{{ page.cover | relative_url }}" alt="{{ page.title }}">
+      <div class="book-details">
+        <p><i>{{ page.description }}</i></p>
+        {{ content }}
+        {% for link in page.buy_links %}
+        <p><a href="{{ link.url }}">{{ link.name }}</a></p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</article>
