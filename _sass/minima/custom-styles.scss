@@ -1,3 +1,10 @@
+// home
+
+.signature {
+  width: 180px;
+  height: auto;
+}
+
 .carousel {
   margin: 0 auto;
   text-align: center;
@@ -5,6 +12,10 @@
 
 .carousel img {
   width: 100%;
+  display: none;
+}
+
+.carousel-image.active {
   display: block;
 }
 
@@ -25,6 +36,61 @@
 .dot.active {
   background-color: #333;
 }
+
+// about
+
+.bio {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.headshot {
+  float: right;
+  width: 160px;
+  height: auto;
+  margin: 0 0 1rem 1rem;
+  border-radius: 4px;
+
+  @media (max-width: 768px) {
+    width: 150px;
+  }
+}
+
+.subheader {
+  text-align: center;
+}
+
+.awards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.award {
+  text-align: center;
+  max-width: 150px;
+}
+
+.award-img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.award-title {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+// books
 
 .book-entry {
   display: flex;
@@ -52,4 +118,43 @@ hr {
   margin: 2rem 0;
   border: none;
   border-top: 1px solid #ccc;
+}
+
+// contact
+
+.contact {
+  max-width: 500px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact label {
+  font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+.contact button {
+  padding: 0.75rem 1.5rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #555;
+}
+
+.contact span {
+  color: red;
 }

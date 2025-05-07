@@ -1,7 +1,7 @@
 const images = ["01", "02", "03", "04"];
 let currentIndex = 0;
 
-const imageElement = document.getElementById("carousel-image");
+const imageElements = document.querySelectorAll(".carousel-image");
 const dotsContainer = document.getElementById("dots-container");
 
 images.forEach((_, index) => {
@@ -17,7 +17,9 @@ images.forEach((_, index) => {
 });
 
 function updateCarousel() {
-  imageElement.src = "assets/images/carousel/" + images[currentIndex] + ".jpg";
+  imageElements.forEach((img, index) => {
+    img.classList.toggle("active", index === currentIndex);
+  });
   document.querySelectorAll(".dot").forEach((dot, index) => {
     dot.classList.toggle("active", index === currentIndex);
   });
@@ -35,7 +37,9 @@ function resetInterval() {
   interval = setInterval(showNextImage, 5000);
 }
 
-imageElement.addEventListener("click", () => {
-  showNextImage();
-  resetInterval();
+document.querySelector('.carousel').addEventListener("click", (e) => {
+  if (e.target.classList.contains('carousel-image')) {
+    showNextImage();
+    resetInterval();
+  }
 });
