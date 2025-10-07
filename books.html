@@ -3,19 +3,34 @@ layout: page
 title: Books
 ---
 
-{% for book in site.books %}
+{% assign books = site.books | default: site.pages | where_exp:"item","item.layout == 'book'" %}
+
+{% for book in books %}
   <div class="book-entry">
-    <img class="book-cover" src="{{ book.cover | relative_url }}" alt="{{ book.title }}">
+    {% if book.cover %}
+      <img class="book-cover" src="{{ book.cover | relative_url }}" alt="{{ book.title }}">
+    {% endif %}
     <div class="book-details">
-      <h3><a href="{{ book.url | relative_url }}">{{ book.title }}</a></h3>
+      <h3>{{ book.title }}</h3>
       <p>{{ book.description }}</p>
-      {% for link in book.buy_links %}
-        <p><a href="{{ link.url }}">{{ link.name }}</a></p>
-      {% endfor %}
+
+      {% if book.genre %}
+        <p><strong>Genre:</strong> {{ book.genre }}</p>
+      {% endif %}
+
+      {% if book.year %}
+        <p><strong>Year:</strong> {{ book.year }}</p>
+      {% endif %}
+
+      {% if book.buy_links %}
+        {% for link in book.buy_links %}
+          <p><a href="{{ link.url }}">{{ link.name }}</a></p>
+        {% endfor %}
+      {% endif %}
     </div>
   </div>
 
   {% unless forloop.last %}
-  <hr>
+    <hr>
   {% endunless %}
 {% endfor %}
