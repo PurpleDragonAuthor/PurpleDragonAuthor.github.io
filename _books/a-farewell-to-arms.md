@@ -1,17 +1,15 @@
 ---
-title: "A Farewell to Arms"
+title: "The Eighth Sin"
 cover: /assets/images/books/farewell.jpg
-description: "A war-time love story drenched in grit, loss, and inevitability."
-genre: War Fiction, Romance
-year: 1929
+description: "A mysterious woman. An unyielding prince, and the cost of conquest in a world ruled by power and betrayal.”
+genre: Grimdark Fantasy Adventure, part of The Eighth Sin series
+year: 2024
 buy_links:
-  - name: Amazon
-    url: https://a.co/d/2ln2Zgp
-  - name: Goodreads
-    url: https://www.goodreads.com/book/show/10799.A_Farewell_to_Arms
-  - name: Gutenberg
-    url: https://www.gutenberg.org/ebooks/75201
+  - name: Amazon (Paperback)
+    url: [https://www.amazon.co.uk/Eighth-Sin-Krystyna-Fulford/dp/1837942757/ref=sr_1_4?crid=17RGYW3L4ES2N&dib=eyJ2IjoiMSJ9.khUwXGt7xTJq-VQVqSNrCHDi_XAR_H78INj57crmRuEX0zWj3gp--gwOo9rDPPvn.-Z2INP0YLxGsxATi3pIvTF-yqVEUMNrWycUb9NU0L9I&dib_tag=se&keywords=krystyna+fulford&qid=1759856935&sprefix=%2Caps%2C165&sr=8-4]
 layout: book
 ---
 
-I served in the First World War, and I remember it not for glory but for mud, rain, and death. *A Farewell to Arms* tells the story of Frederic Henry, an American ambulance driver who falls in love with a British nurse, Catherine Barkley. Their romance is brief, brutal, and doomed - like war itself. It’s not a love story. It’s a story with love in it, surrounded by all the things that try to kill it.
+In a kingdom under threat from an encroaching empire, Prince Arvyn embarks on a quest to find a legendary weapon. Alongside his enigmatic guide, Cliona, and loyal uncle, they brave treacherous terrain and secrets hidden in places long forgotten. Mysterious hints from the past shrouded in ancient riddles guide their way. As their paths converge, intrigue, history, and a touch of magic intertwine in a tale of secrets, power, and a captivating melody. 
+
+In this realm torn by ancient rivalries and hidden truths, Prince Arvyn and his allies uncover a web of secrets. As they face challenges, alliances, and betrayal, they must navigate a world on the brink of chaos.
