@@ -3,17 +3,16 @@ layout: page
 title: Books
 ---
 
-{% comment %}
-  This loop will display all pages with layout: book (our _books/*.md files)
-{% endcomment %}
 {% assign books = site.pages | where_exp:"item","item.layout == 'book'" %}
 
+<div style="display:flex; flex-direction:column; gap:40px;">
+
 {% for book in books %}
-  <div class="book-entry" style="margin-bottom: 40px;">
+  <div style="display:flex; align-items:flex-start; gap:20px; border-bottom:1px solid #ccc; padding-bottom:20px;">
     {% if book.cover %}
-      <img class="book-cover" src="{{ book.cover | relative_url }}" alt="{{ book.title }}" style="max-width:200px; float:left; margin-right:20px;">
+      <img src="{{ book.cover | relative_url }}" alt="{{ book.title }}" style="width:200px; height:auto; flex-shrink:0;">
     {% endif %}
-    <div class="book-details" style="overflow:hidden;">
+    <div>
       <h3>{{ book.title }}</h3>
       <p>{{ book.description }}</p>
 
@@ -31,10 +30,7 @@ title: Books
         {% endfor %}
       {% endif %}
     </div>
-    <div style="clear:both;"></div>
   </div>
-
-  {% unless forloop.last %}
-    <hr>
-  {% endunless %}
 {% endfor %}
+
+</div>
